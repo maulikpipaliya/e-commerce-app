@@ -8,6 +8,7 @@
     --dark: #000000	;
     --green: lightgreen;
     --white: white;
+    --darkgreen: darkgreen;
   }
 
 body{
@@ -44,7 +45,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -72,4 +73,109 @@ body{
     color: var(--white);
     background-color: var(--dark);
     font-size: small;
+}
+
+/* Main content - Products  */
+
+.list-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.list-products li{
+    list-style-type: none;
+    padding: 0px;
+    flex: 0 1 12rem;
+    margin: 1rem;
+    height: 20rem;
+    border-bottom: .1rem #c0c0c0 solid;
+}
+
+.item-product-img{
+    width: 10rem;
+    height: 12rem;
+}
+
+.item-product-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.item-product-name a{
+    text-decoration: none;
+    color: black;
+}
+
+.item-product-name a:hover{
+    color: var(--darkgreen);
+}
+
+.item-product-brand{
+    font-size: 1rem;
+    color: #808080;
+}
+
+.item-product-price{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.item-product-rating{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item-product-rating .checked{
+    color: green;
+}
+
+
+
+/* side bar */
+.brand button{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--white);
+} 
+
+.brand button:hover{
+    color: var(--green);
+}
+
+.sidebar{
+    position: fixed;
+    transform: translateX(-15rem);
+    width: 15rem;
+    background-color: var(--dark);
+    color: var(--white);
+    height: 100%;
+}
+
+.sidebar.open{
+    transform: translateX(0);
+}
+
+#trg-sidebar-close{
+
+    border-radius: 50%;
+    border: .1rem solid black;
+    width:2rem;
+    height: 2rem;
+    
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 2.5rem
+
 }

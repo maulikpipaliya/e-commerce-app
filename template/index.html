@@ -6,34 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>enJoyy-Shopping</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="ctr-grid">
         <header class="header">
             <div class="brand">
+                <button id="trg-sidebar">
+                    &#9776;
+                </button>
                 <a href="index.html">JOYY WITHIN</a>
             </div>
             <div class="header-links">
 
                 <a href="cart.html">Cart</a>
-                <a href="signin.html">SignIn</a>
+                <a href="signin.html">SignIn</a> 
             </div>
         </header>
-   
+        
+        <aside class="sidebar">
+            <h4>Shopping Categories</h4>
+            <button id="trg-sidebar-close">x</button>
+            <ul>
+                <li><a href="index.html">Pants</a></li>
+                <li><a href="index.html">Shirts</a></li>
+            </ul>
+        </aside>
         <main class="main">
             <div class="ctr-products">
                 <ul class="list-products">
+         
                     <li>
                         <div class="item-product">
-                            <img src="images/tshirt1.jpeg" alt="product-pic">
-                            <div class="item-product-name">Slim T-Shirt</div>
+                            <img src="images/tshirt1.jpeg" class="item-product-img" alt="product-pic">
+                            <div class="item-product-name">
+                                <a href="product.html">
+                                    Slim T-Shirt
+                                </a>   
+                            </div>
                             <div class="item-product-brand">Nike</div>
                             <div class="item-product-price">₹ 560</div>
+                            <div class="item-product-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
 
-                            Product 1
+                            
                         </div>
                     </li>
-                    
+
+                    <li>
+                        <div class="item-product">
+                            <img src="images/tshirt2.jpeg" class="item-product-img" alt="product-pic">
+                            <div class="item-product-name">
+                                <a href="product.html">
+                                    Slim T-Shirt
+                                </a>   
+                            </div>
+                            <div class="item-product-brand">Nike</div>
+                            <div class="item-product-price">₹ 700</div>
+                            <div class="item-product-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-product">
+                            <img src="images/tshirt4.jpeg" class="item-product-img" alt="product-pic">
+                            <div class="item-product-name">
+                                <a href="product.html">
+                                    Slim T-Shirt
+                                </a>   
+                            </div>
+                            <div class="item-product-brand">Nike</div>
+                            <div class="item-product-price">₹ 800</div>
+                            <div class="item-product-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-product">
+                            <img src="images/tshirt5.jpeg" class="item-product-img" alt="product-pic">
+                            <div class="item-product-name">
+                                <a href="product.html">
+                                    Slim T-Shirt
+                                </a>   
+                            </div>
+                            <div class="item-product-brand">Nike</div>
+                            <div class="item-product-price">₹ 400</div>
+                            <div class="item-product-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-product">
+                            <img src="images/tshirt6.jpeg" class="item-product-img" alt="product-pic">
+                            <div class="item-product-name">
+                                <a href="product.html">
+                                    Slim T-Shirt
+                                </a>   
+                            </div>
+                            <div class="item-product-brand">Nike</div>
+                            <div class="item-product-price">₹ 1000</div>
+                            <div class="item-product-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-product">
+                            <img src="images/tshirt7.jpeg" class="item-product-img" alt="product-pic">
+                            <div class="item-product-name">
+                                <a href="product.html">
+                                    Slim T-Shirt
+                                </a>   
+                            </div>
+                            <div class="item-product-brand">Nike</div>
+                            <div class="item-product-price">₹ 560</div>
+                            <div class="item-product-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-product">
+                            <img src="images/tshirt8.jpeg" class="item-product-img" alt="product-pic">
+                            <div class="item-product-name">
+                                <a href="product.html">
+                                    Slim T-Shirt
+                                </a>   
+                            </div>
+                            <div class="item-product-brand">Nike</div>
+                            <div class="item-product-price">₹ 450</div>
+                            <div class="item-product-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-product">
+                            <img src="images/tshirt10.webp" class="item-product-img" alt="product-pic">
+                            <div class="item-product-name">
+                                <a href="product.html">
+                                    Slim T-Shirt
+                                </a>   
+                            </div>
+                            <div class="item-product-brand">Nike</div>
+                            <div class="item-product-price">₹ 350</div>
+                            <div class="item-product-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            
+                        </div>
+                    </li>
                 </ul>
             </div>
         </main>
@@ -42,6 +221,11 @@
             &copy; JOYY WITHIN | All rights reserved
         </footer>
     </div>
+
+
+
+
+
 
 </body>
 </html>
