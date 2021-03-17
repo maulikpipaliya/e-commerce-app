@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import data from '../data';
+import axios from 'axios';
+
 
 function ProductScreen(props) {
     console.log(props.match.params.id);
     const productId = props.match.params.id;
     const product = data.products.find(x => x._id === productId);
+
+
     return (
         <div className="ctr-product-details">
             <div className="ln-back">
